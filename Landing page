@@ -1,0 +1,56 @@
+import React from 'react';
+import { ChevronRight } from 'lucide-react';
+
+const BobWolfComingSoonLanding = () => {
+  return (
+    <div className="min-h-screen bg-[#F5F3EF] flex items-center justify-center font-['RocaTwo']">
+      <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+        {/* Left Side: Sneaker Showcase */}
+        <div>
+          <div className="bg-white p-6 rounded-xl shadow-lg">
+            <img 
+              src="/api/placeholder/600/600"
+              alt="Bob Wolf Premium Sneakers"
+              className="w-full h-auto object-contain"
+            />
+          </div>
+        </div>
+
+        {/* Right Side: Coming Soon Content */}
+        <div className="text-center md:text-left">
+          {/* Brand Logo */}
+          <div className="mb-8 flex justify-center md:justify-start">
+            <img src="/api/placeholder/200/50" alt="Bob Wolf Logo" />
+          </div>
+
+          <h1 className="text-4xl md:text-5xl font-semibold text-gray-900 mb-4">
+            Crafted California Heritage
+          </h1>
+          <p className="text-gray-600 text-lg mb-8">
+            Vintage-inspired athletic shoes, reimagined for today.
+            Launching soon from the Golden State.
+          </p>
+
+          {/* Email Signup */}
+          <form className="max-w-md mx-auto md:mx-0 space-y-4">
+            <div className="relative">
+              <input
+                type="email"
+                placeholder="Enter your email for updates"
+                className="w-full pl-4 pr-4 py-3 border-2 border-gray-300 rounded-full focus:outline-none focus:border-gray-500"
+              />
+            </div>
+            <button 
+              type="submit"
+              className="w-full bg-gray-900 text-white py-3 rounded-full hover:bg-gray-700 transition duration-300 flex items-center justify-center"
+            >
+              Notify Me <ChevronRight className="ml-2 h-5 w-5" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default BobWolfComingSoonLanding;
